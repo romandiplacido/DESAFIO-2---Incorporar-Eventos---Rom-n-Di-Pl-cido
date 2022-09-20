@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 2 - Incorporar Eventos</title>
+</head>
+<body>
+    
+    <script>
+        addEventListener('DOMContentLoaded', inicio);
+
+        function inicio() {
+            document.getElementById('recuadro1').addEventListener('click', presion1);
+            document.getElementById('recuadro2').addEventListener('dblclick', presion2);
+        }
+
+        function presion1() {
+            alert('se hizo click');
+        }
+
+        function presion2() {
+            alert('se hizo doble click');
+        }
+    </script>
+
+    <div style="width:200px;height:200px;background:#ffff00" id="recuadro1">
+        Prueba del evento click
+    </div>
+    <div style="width:200px;height:200px;background:#ff5500" id="recuadro2">
+        Prueba del evento dblclick
+    </div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/javascript/index.js"></script>
+</body>
+</html>
